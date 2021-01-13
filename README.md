@@ -28,3 +28,8 @@ npm run build
 ```
 npm run start
 ```
+
+4. To create the database:
+```
+psql postgres < database/schema.sql
+```
