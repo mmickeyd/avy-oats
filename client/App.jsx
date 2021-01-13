@@ -1,23 +1,14 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const App = () => {
-  const [state, setState] = useState(false);
+import RoseForecast from './components/RoseForecast.jsx';
 
-  useEffect(() => {
-    axios.get('/filepath')
-      .then(res => {
-        setState(res.data);
-      })
-      .catch(err => {
-        console.error(err);
-      });
-  }, []);
+const App = () => {
 
   return (
     <div>
-      MY WEBPAGE
+      <h1>Avy Oats</h1>
+      <RoseForecast />
     </div>
   );
 };
