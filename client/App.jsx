@@ -5,6 +5,15 @@ import RoseForecast from './components/RoseForecast.jsx';
 import UdotTrafficCams from './components/UdotTrafficCams.jsx';
 
 const App = () => {
+  const [forecast, setForecast] = useState('');
+
+  useEffect( () => {
+    axios.get('/forecasts')
+      .then(res => {
+        setForecast(res.data);
+      })
+      .catch(err => console.error(err));
+  }, []);
 
   return (
     <div>
