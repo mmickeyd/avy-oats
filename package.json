@@ -1,9 +1,11 @@
 {
   "name": "avy-oats",
   "version": "1.0.0",
-  "description": "",
+  "description": "All-in-one app providing an overview for decision making for backcountry skiers",
   "main": "index.js",
   "scripts": {
+    "build": "webpack -d -watch",
+    "start": "nodemon ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +13,7 @@
     "url": "git+https://github.com/mmickeyd/avy-oats.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "mmickeyd",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mmickeyd/avy-oats/issues"
@@ -38,6 +40,8 @@
     "express": "^4.17.1",
     "node": "^15.4.0",
     "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "postgresql": "0.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "^4.0.1",
