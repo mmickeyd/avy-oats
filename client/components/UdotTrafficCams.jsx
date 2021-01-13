@@ -8,7 +8,7 @@ const UdotTrafficCams = (props) => {
   props.canyon === 'lcc' ? (trafficCamUrls = lccUrls, canyon = 'Little Cottonwood Canyon') : (trafficCamUrls = bccUrls, canyon = 'Big Cottonwood Canyon');
   return (
     <div>
-      {canyon}
+      <h3>{canyon}</h3>
       {trafficCamUrls.map(url =>
         <div>
           <img src={`${url}`} alt={`UDOT traffic cam in ${canyon}`} />
