@@ -1,0 +1,51 @@
+{
+  "name": "avy-oats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmickeyd/avy-oats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmickeyd/avy-oats/issues"
+  },
+  "homepage": "https://github.com/mmickeyd/avy-oats#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
+    "axios": "^0.21.1",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-adapter-utils": "^1.14.0",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^7.17.0",
+    "express": "^4.17.1",
+    "node": "^15.4.0",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "react-test-renderer": "^17.0.1",
+    "style-loader": "^2.0.0",
+    "supertest": "^6.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
