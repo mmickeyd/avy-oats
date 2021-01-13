@@ -7,4 +7,4 @@ const dbConnection = pool.connect()
   .then( console.log('Postgres database connected') )
   .catch( e => console.error(e) );
 
-module.exports = dbConnection;
+module.exports = pool;
