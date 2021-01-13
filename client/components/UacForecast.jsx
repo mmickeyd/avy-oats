@@ -1,5 +1,5 @@
 import React from 'react';
-import { convertString, sortAvyProbs } from './helpers.js';
+import { convertString, sortAvyProbs } from '../../helpers.js';
 
 const UacForecast = (props) => {
   const forecast = props.forecast;
