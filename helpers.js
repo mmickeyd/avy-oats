@@ -1,6 +1,6 @@
 const convertString = (string) => {
   if (string) {
-    string = string.split('|>').join('\'').split('&nbsp;').join(' ').split('\\r').join('').split('\\').join('');;
+    string = string.split('|>').join('\'').split('&nbsp;').join(' ').split('\\r').join('').split('\\').join('').split('&lt;').join(' < ').split('&gt;').join(' > ').split('&amp;').join(' & ');
     return string;
   }
   return '';
@@ -47,3 +47,4 @@ module.exports = {
   checkTime,
   checkDay
 };
+

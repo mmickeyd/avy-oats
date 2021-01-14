@@ -16,7 +16,7 @@ const get = (req, res) => {
 
 const update = (req, res) => {
   let newForecast = (JSON.stringify(req.body.advisory)).split('\'').join('|>');
-  newForecast = newForecast.split('danger_rose_1')[0] + 'overall_danger_rating' + newForecast.split('overall_danger_rating')[1];
+  newForecast = newForecast.split('danger_rose_1')[0] + 'overall_danger_rose_image' + newForecast.split ('overall_danger_rose_image')[1];
   models.updateForecastInDB(newForecast, (err, results) => {
     if (err) {
       console.error('update forecast failed: ', err);

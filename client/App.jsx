@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div>
       <h1>Avy Oats</h1>
-      <RoseForecast />
+      <RoseForecast avyRose={forecast.overall_danger_rose_image} />
       <UacForecast forecast={forecast} />
       <h2>Traffic Cams</h2>
       <UdotTrafficCams canyon={'lcc'} />
