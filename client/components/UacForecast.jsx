@@ -4,6 +4,7 @@ import { convertString, sortAvyProbs } from '../../helpers.js';
 const UacForecast = (props) => {
   const forecast = props.forecast;
   const date = forecast.date_issued;
+  const overallDanger = forecast.overall_danger_rating;
   const currentConditions = convertString(forecast.current_conditions);
   const recentActivity = convertString(forecast.recent_activity);
   const bottomLine = convertString(forecast.bottom_line);
@@ -14,6 +15,12 @@ const UacForecast = (props) => {
       <div>
         <span>Date Issued:&nbsp;</span>
         {date}
+        <br/>
+        <br/>
+        <div>
+          <h3>Overall Danger Rating:</h3>
+          {overallDanger}
+        </div>
         <br/>
         <br/>
         <span>Current Conditions:&nbsp;</span>
@@ -33,8 +40,10 @@ const UacForecast = (props) => {
             <br/><br/>
           </div>
         )}
-        <span>Bottom Line:&nbsp;</span>
-        {bottomLine}
+        <div>
+          <h3>Bottom Line:</h3>
+          {bottomLine}
+        </div>
       </div>
     </div>
   );
