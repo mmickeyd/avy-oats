@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import oats from './dist/oats.png';
 import RoseForecast from './components/RoseForecast.jsx';
 import UdotTrafficCams from './components/UdotTrafficCams.jsx';
 import UacForecast from './components/UacForecast.jsx';
@@ -23,7 +24,9 @@ const App = () => {
 
   return (
     <div>
+      <img src={oats} alt='oats'/>
       <h1>Avy Oats</h1>
+      <img src={oats} alt='oats'/>
       <RoseForecast avyRose={forecast.overall_danger_rose_image} />
       <UacForecast forecast={forecast} />
       <h2>Traffic Cams</h2>
@@ -32,7 +35,6 @@ const App = () => {
       <Webcams />
       <Radar />
       <CloudCoverForecast />
-      <AltaWxStations />
       <TwitterFeed />
     </div>
   );
