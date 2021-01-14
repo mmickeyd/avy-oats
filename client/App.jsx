@@ -7,6 +7,7 @@ import UacForecast from './components/UacForecast.jsx';
 import Radar from './components/Radar.jsx';
 import CloudCoverForecast from './components/CloudCoverForecast.jsx';
 import Webcams from './components/Webcams.jsx';
+import AltaWxStations from './components/AltaWxStations.jsx';
 
 const App = () => {
   const [forecast, setForecast] = useState('');
@@ -30,6 +31,7 @@ const App = () => {
       <Webcams />
       <Radar />
       <CloudCoverForecast />
+      <AltaWxStations />
     </div>
   );
 };
