@@ -5,6 +5,7 @@ import RoseForecast from './components/RoseForecast.jsx';
 import UdotTrafficCams from './components/UdotTrafficCams.jsx';
 import UacForecast from './components/UacForecast.jsx';
 import Radar from './components/Radar.jsx';
+import CloudCoverForecast from './components/CloudCoverForecast.jsx';
 
 const App = () => {
   const [forecast, setForecast] = useState('');
@@ -26,6 +27,7 @@ const App = () => {
       <UdotTrafficCams canyon={'lcc'} />
       <UdotTrafficCams canyon={'bcc'} />
       <Radar />
+      <CloudCoverForecast />
     </div>
   );
 };
