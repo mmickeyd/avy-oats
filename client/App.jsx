@@ -4,6 +4,7 @@ import axios from 'axios';
 import RoseForecast from './components/RoseForecast.jsx';
 import UdotTrafficCams from './components/UdotTrafficCams.jsx';
 import UacForecast from './components/UacForecast.jsx';
+import Radar from './components/Radar.jsx';
 
 const App = () => {
   const [forecast, setForecast] = useState('');
@@ -24,6 +25,7 @@ const App = () => {
       <h2>Traffic Cams</h2>
       <UdotTrafficCams canyon={'lcc'} />
       <UdotTrafficCams canyon={'bcc'} />
+      <Radar />
     </div>
   );
 };
