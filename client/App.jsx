@@ -6,6 +6,7 @@ import UdotTrafficCams from './components/UdotTrafficCams.jsx';
 import UacForecast from './components/UacForecast.jsx';
 import Radar from './components/Radar.jsx';
 import CloudCoverForecast from './components/CloudCoverForecast.jsx';
+import Webcams from './components/Webcams.jsx';
 
 const App = () => {
   const [forecast, setForecast] = useState('');
@@ -26,6 +27,7 @@ const App = () => {
       <h2>Traffic Cams</h2>
       <UdotTrafficCams canyon={'lcc'} />
       <UdotTrafficCams canyon={'bcc'} />
+      <Webcams />
       <Radar />
       <CloudCoverForecast />
     </div>
