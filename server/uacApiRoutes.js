@@ -9,24 +9,24 @@ uacAPI.use(express.static(__dirname + '/../client/dist'));
 uacAPI.use(bodyParser.urlencoded({ extended: true }));
 uacAPI.use(bodyParser.json());
 
-let checkApi = true;
-let forecastDate = 'Thursday, January 14, 2021 - 7:10am';
+let newDay = false;
+let forecastDate = 'Tuesday, January 12, 2021 - 4:41am';
 
-const resetCheckApi = () => {
-  checkDay() ? checkApi = true : null;
-  checkTime() ? checkApi = true : checkApi = false;
+const checkDayInterval = () => {
+  checkDay() ? newDay = true : null;
 };
 
 const getUacForecast = () => {
-  console.log('did check api change? ', checkApi);
-  checkApi ? (
+  console.log('is it a new day? ', newDay);
+  checkTime() && newDay ? (
     axios.get('https://utahavalanchecenter.org/forecast/salt-lake/json')
       .then(res => {
         console.log('getting forecast...');
         const data = res.data.advisories[0];
-        data.date_issued !== forecastDate ? (
-          forecastDate = data.date_issued,
-          checkApi = false,
+        data.advisory.date_issued !== forecastDate ? (
+          console.log('updating forecast...'),
+          forecastDate = data.advisory.date_issued,
+          newDay = false,
           axios.put('http://localhost:3000/forecasts', data)
         ) : null;
       })
@@ -34,15 +34,15 @@ const getUacForecast = () => {
   ) : null;
 };
 
-const invokeUacGetForecast = () => {
+const invokeForecastIntervals = () => {
   // --- remove these two function invocations before deployment --- //
-  resetCheckApi();
+  checkDayInterval();
   getUacForecast();
   // --------------------------------------------------------------- //
-  setInterval(getUacForecast, 600000);
-  setInterval(resetCheckApi, 300000);
+  setInterval(getUacForecast, 900000);
+  setInterval(checkDayInterval, 43200000);
 };
 
-invokeUacGetForecast();
+invokeForecastIntervals();
 
 module.exports = uacAPI;
