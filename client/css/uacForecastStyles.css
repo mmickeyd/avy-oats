@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.entireForecast {
+  padding-bottom: 20px;
+}
+
+.detailedForecast {
+  padding-bottom: 15px;
+}
+
+.forecastButton {
+  font-size: 60px;
+  border: 0;
+  display: inline-flex;
+  color: #e4e4e4;
+  outline: none;
+  background-color: transparent;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  margin-left: 9.5%;
+}
+
+.overallDanger {
+  font-size: 45px;
+  border: 0;
+  display: inline-flex;
+  color: #e4e4e4;
+  outline: none;
+  background-color: transparent;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-left: 1%;
+  padding-top: 3%;
+  padding-bottom: 10px;
+}
+
+.expandButton {
+  font-size: 45px;
+  border: 0;
+  display: inline-flex;
+  color: #e4e4e4;
+  outline: none;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-left: 9.5%;
+  margin-bottom: 8px;
+}
+
+.forecastButton:hover, .expandButton:hover {
+  cursor: pointer;
+}
+
+.buttonWidth {
+  width: 100%
+}
+
+.forecastSection {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.forecastNoExpandSection {
+  font-size: 30px;
+    font-weight: 400;
+    margin-left: 3%;
+    background-color: black;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.expandedForecastGrid {
+  padding-bottom: 45px;
+}
+
+.blackBackground {
+  background-color: black;
+  border-radius: 10px;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 5px;
+  line-height: 38px;
+}
+
+.expandIcon {
+  width: 10%;
+  padding-left: 7%;
+  transform: rotate(270deg);
+  transition: all .3s ease-in-out;
+  margin-top: 6%;
+}
+
+.nonExpandIcon {
+  width: 4.2%;
+  padding-left: 3%;
+  transform: rotate(90deg);
+  margin-top: -3%;
+}
+
+.iconExpanded {
+  transform: rotate(90deg);
+  margin-top: -7%;
+}
+
+.caretDetails {
+  stroke: rgb(197 3 6);
+  stroke-width: 4px;
+  fill: none;
+}
+
+.avySection {
+  background-color: black;
+  border-radius: 10px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding: 9px;
+  line-height: 38px;
+}
+
+.avyProblem {
+  color: rgb(197 3 6);
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+@media screen and (width:40px) {
+
+}
