@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&display=swap');
+
+body {
+  background-color: #1b1b1b;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  touch-action: manipulation;
+  text-align: center;
+  color: #e4e4e4;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  font-size: 170%;
+  font-family: 'montserrat', 'Arial Black', Arial, Helvetica, sans-serif;
+  width: 94%;
+  padding: 3%
+}
+
+.header {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  background-color: black;
+  padding: 4% 0;
+  border-radius: 55px;
+  border-style: dashed;
+  border-color: #b30305;
+  border-width: 5px;
+  max-height: 180px;
+}
+
+.roseForecast {
+  grid-row: 2 / 3;
+}
+
+.uacForecast {
+  grid-row: 3 / 4;
+}
+
+.trafficCams {
+  grid-row: 4 / 5;
+  margin-bottom: -50px;
+}
+
+.webcams {
+  grid-row: 5 / 6;
+}
+
+.radarCloudCover {
+  grid-row: 6 / 7;
+  display: flex;
+  flex-direction: row;
+  font-size: 18.5px;
+  justify-content: space-evenly;
+}
+
+.wxData {
+  grid-row: 9 / 10; /* edit in weatherStyles.css too */
+}
+
+.twitterContainer {
+  grid-row: 8 / 9;
+  pointer-events: none;
+  padding: 70px 0;
+  text-align: -webkit-center;
+}
+
+.oatsFlipped {
+  order: 1;
+  pointer-events: none;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 25%;
+}
+
+.avyOatsText {
+  order: 2;
+  font-family: 'Noto Serif', 'Averia Serif Libre',serif;
+  margin-top: 35px;
+  font-size: 300%;
+  font-style: italic;
+}
+
+.oats {
+  order: 3;
+  pointer-events: none;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  width: 25%;
+}
+
+.slForecastHeader {
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.detailedForecastHeader {
+  font-weight: 400;
+}
+
+.roseImage {
+  background-color: #c5c5c5;
+  border-radius: 150px;
+  box-shadow: 0px 0px 20px 20px #000000;
+  border-style: solid;
+  border-color: #b30305;
+  border-width: 7px;
+  margin: 40px 250px 30px;
+  pointer-events: none;
+}
+
+.twitterFeed {
+  width: 80%;
+  margin-top: 25px;
+  box-shadow: 0px 0px 20px 20px #000000;
+}
+
+.twitterFeedHeader {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.twitterFeedSubheader {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+
