@@ -24,15 +24,16 @@ const sortAvyProbs = (avyProbs) => {
 };
 
 const checkTime = () => {
-  let time = (new Date().getHours() - 1);
-  if (time < 9 && time > 3) {
+  const time = JSON.stringify(new Date().toLocaleString('en-US', { timeZone: 'America/Denver' })).split(/[ :]+/)[1];
+  const amPM = JSON.stringify(new Date().toLocaleString('en-US', { timeZone: 'America/Denver' })).split(' ')[2].substr(0, 2);
+  if (time < 8 && time > 3 && amPM === 'AM') {
     return true;
   } else {
     return false;
   }
 };
 
-let changingDay = '29';
+let changingDay = '14';
 
 const checkDay = () => {
   let result;

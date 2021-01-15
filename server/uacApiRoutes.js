@@ -10,7 +10,7 @@ uacAPI.use(bodyParser.urlencoded({ extended: true }));
 uacAPI.use(bodyParser.json());
 
 let checkApi = true;
-let forecastDate = 'Not a real date';
+let forecastDate = 'Thursday, January 14, 2021 - 7:10am';
 
 const resetCheckApi = () => {
   checkDay() ? checkApi = true : null;

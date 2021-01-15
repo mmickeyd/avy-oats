@@ -1,12 +1,13 @@
 import React from 'react';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import styles from '../css/generalStyles.css';
 
 const TwitterFeed = () => {
   return (
-    <div>
-      <div>Cottonwood Canyon Road Updates</div>
-      <span>(Courtesy of UDOT)</span>
-      <section>
+    <div className={styles.twitterContainer}>
+      <div className={styles.twitterFeedHeader}>Cottonwood Canyon Road Updates</div>
+      <span className={styles.twitterFeedSubheader}>(Courtesy of UDOT)</span>
+      <section className={styles.twitterFeed}>
         <div>
           <TwitterTimelineEmbed
             sourceType='profile'
