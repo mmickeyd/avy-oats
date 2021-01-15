@@ -1,17 +1,19 @@
 import React from 'react';
+import styles from '../css/weatherStyles.css';
 
 const UdotTrafficCams = (props) => {
   let trafficCamUrls;
   let canyon;
-  const lccUrls = ['http://udottraffic.utah.gov/1_devices/aux14895.jpeg', 'http://udottraffic.utah.gov/1_devices/aux14604.jpeg', 'http://udottraffic.utah.gov/1_devices/aux16266.jpeg', 'http://udottraffic.utah.gov/1_devices/aux16270.jpeg'];
-  const bccUrls = ['http://udottraffic.utah.gov/1_devices/aux14606.jpeg', 'http://udottraffic.utah.gov/1_devices/aux14605.jpeg', 'http://udottraffic.utah.gov/1_devices/aux16213.jpeg', 'http://udottraffic.utah.gov/1_devices/aux16215.jpeg'];
+  const url = 'http://udottraffic.utah.gov/1_devices/aux';
+  const lccUrls = [`${url}14895.jpeg`, `${url}14604.jpeg`, `${url}16266.jpeg`, `${url}16270.jpeg`];
+  const bccUrls = [`${url}14606.jpeg`, `${url}14605.jpeg`, `${url}16213.jpeg`, `${url}16215.jpeg`];
   props.canyon === 'lcc' ? (trafficCamUrls = lccUrls, canyon = 'Little Cottonwood Canyon') : (trafficCamUrls = bccUrls, canyon = 'Big Cottonwood Canyon');
   return (
-    <div>
-      <h3>{canyon}</h3>
+    <div className={styles.canyonCams}>
+      <div className={styles.canyonName}>{canyon}</div>
       {trafficCamUrls.map(url =>
-        <div>
-          <img src={`${url}`} alt={`UDOT traffic cam in ${canyon}`} />
+        <div className={styles.singleCam}>
+          <img className={styles.webcamImage} src={`${url}`} alt={`UDOT traffic cam in ${canyon}`} />
         </div>
       )}
       <br/>

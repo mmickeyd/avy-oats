@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ----- UDOT TRAFFIC CAMS ----- */
+.trafficCamsHeader {
+  font-weight: 600;
+  font-size: 60px;
+  margin: 30px;
+}
+
+.camsContainer {
+  display: grid;
+  grid-template-columns: 42% 42%;
+  place-content: center;
+  justify-content: space-evenly;
+}
+
+.cayonCams {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+
+.canyonName {
+  font-weight: 400;
+  margin-top: -20px;
+  width: 100%;
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+
+.singleCam {
+  padding: 20px 0;
+}
+
+.webcamImage {
+  box-shadow: 0px 0px 12px 12px #000000;
+  width: 385px;
+  height: 270px;
+  pointer-events: none;
+}
+/* ---------------------------- */
+
+
+/* ----- LIVE RADAR ----- */
+.map {
+  height: 59vw;
+  position: relative;
+  box-shadow: 0px 0px 12px 12px #000000;
+  pointer-events: none;
+}
+
+.radar {
+  order: 1;
+  width: 45%;
+  pointer-events: none;
+}
+/* ---------------------- */
+
+.radarCloudHeader {
+  font-weight: 600;
+
+}
+
+/* ----- CLOUD COVER FORECAST ----- */
+.cloudCover {
+  order: 2;
+  width: 45%;
+}
+
+.image {
+  box-shadow: 0px 0px 12px 12px #000000;
+  width: 43.1vw;
+  pointer-events: none;
+}
+/* -------------------------------- */
+
+
+/* ----- RESORT WEBCAMS ----- */
+.webcamsSection {
+  padding: 60px 0 50px;
+}
+
+.webcams {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+
+.superior {
+  height: 164px;
+  width: 265px;
+}
+
+.singleWebcam {
+  height: 160px;
+  width: 265px;
+}
+
+.webcamName {
+  padding: 4% 0 10%;
+  font-weight: 400;
+  font-size: 80%;
+}
+
+.webcamsHeader {
+  font-weight: 600;
+  font-size: 60px;
+}
+/* -------------------------- */
+
+
+/* ----- WEATHER STATION DATA ----- */
+.wxStationData {
+  width: 95%;
+  height: 550px;
+  background-color: #c5c5c5;
+  margin-top: 25px;
+  box-shadow: 0px 0px 20px 20px #000000;
+}
+
+.wxDataHeader {
+  font-size: 80%;
+}
+
+.wxData {
+  grid-row: 8 / 9;
+  padding: 8% 0 6%;
+}
+/* -------------------------------- */

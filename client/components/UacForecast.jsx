@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { convertString, sortAvyProbs } from '../../helpers.js';
 
 const UacForecast = (props) => {

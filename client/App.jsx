@@ -12,6 +12,7 @@ import Webcams from './components/Webcams.jsx';
 import TwitterFeed from './components/TwitterFeed.jsx';
 
 import styles from './css/generalStyles.css';
+import camStyles from './css/weatherStyles.css';
 
 const App = () => {
   const [forecast, setForecast] = useState('');
@@ -34,8 +35,8 @@ const App = () => {
       <RoseForecast className={styles.roseForecast} avyRose={forecast.overall_danger_rose_image}/>
       <UacForecast className={styles.uacForecast} forecast={forecast}/>
       <div className={styles.trafficCams}>
-        <h2>Traffic Cams</h2>
-        <span>
+        <h2 className={camStyles.trafficCamsHeader}>Traffic Cams</h2>
+        <span className={camStyles.camsContainer}>
           <UdotTrafficCams canyon={'lcc'} />
           <UdotTrafficCams canyon={'bcc'} />
         </span>
