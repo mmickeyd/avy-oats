@@ -6,11 +6,11 @@ Avy Oats
 
 ## Sections to App ##
 > Avalanche forecasts
-> Cloud cover forecasts
-> UDOT traffic cams
-> Animated radar covering the last hour
-> Detailed weather forecasts
-> Graphs showing data from weather stations
+> | Cloud cover forecasts
+> | UDOT traffic cams
+> | Animated radar covering the last hour
+> | Detailed weather forecasts
+> | Graphs showing data from weather stations
 
 ## Installing Dependencies and Usage ##
 

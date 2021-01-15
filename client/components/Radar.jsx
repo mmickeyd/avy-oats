@@ -18,7 +18,7 @@ const Radar = () => {
 
   return (
     <div>
-      <h2>Radar from the last hour:</h2>
+      <h2>Radar from the last hour</h2>
       <div id="myMap" style={mapStyle} ></div>
     </div>
   );
