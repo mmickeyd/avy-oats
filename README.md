@@ -1,3 +1,5 @@
+[avyoats.com](avyoats.com)
+
 ## Project Name ##
 Avy Oats
 
@@ -7,13 +9,12 @@ Avy Oats
 
 > A portion of this app uses information pulled from the UAC (Utah Avalanche Center) and it would not be nearly as useful without their free contributions. If you enjoy using this app, please check out their website and consider donating to the cause. [UAC Donation Page](https://utahavalanchecenter.org/)
 
-## Sections to App ## (not all complete yet)
-> Avalanche forecasts
-> Cloud cover forecasts
-> UDOT traffic cams
-> Animated radar covering the last hour
-> Detailed weather forecasts
-> Graphs showing data from weather stations
+## Sections to App ##
+> Avalanche forecasts |
+> Cloud cover forecasts |
+> UDOT traffic cams |
+> Animated radar covering the last hour |
+> Twitter Feed
 
 ## Creating environment variables and database ##
 
